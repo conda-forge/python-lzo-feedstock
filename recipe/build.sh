@@ -3,4 +3,4 @@
 export CPPFLAGS="-I$PREFIX/include -I$PREFIX/include/lzo $CPPFLAGS"
 export LDFLAGS="-L$PREFIX/lib $LDFLAGS"
 
-$PYTHON setup.py install
+python -m pip install --no-deps --ignore-installed .
