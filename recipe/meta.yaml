@@ -17,8 +17,10 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - python
-    - setuptools
+    - pip
     - lzo 2.10.*
   run:
     - python
