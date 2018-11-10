@@ -13,12 +13,14 @@ source:
 
 build:
   skip: True  # [win]
-  number: 0
+  number: 1000
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - python
-    - setuptools
+    - pip
     - lzo 2.10.*
   run:
     - python
