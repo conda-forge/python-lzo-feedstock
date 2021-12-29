@@ -1,6 +1,6 @@
 {% set name = "python-lzo" %}
-{% set version = "1.12" %}
-{% set sha256 = "97a8e46825e8f1abd84c2a3372bc09adae9745a5be5d3af2692cd850dac35345" %}
+{% set version = "1.14" %}
+{% set sha256 = "83cbd8ecaae284735250e31d6c0ecc18ac08763fab2a8c910dc5a6910db6250c" %}
 
 package:
   name: {{ name|lower }}
@@ -12,8 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  skip: True  # [win]
-  number: 1004
+  skip: true  # [win]
+  number: 0
 
 requirements:
   build:
@@ -34,7 +34,7 @@ about:
   home: https://github.com/jd-boyd/python-lzo
   license: GPL-2.0
   license_file: COPYING
-  summary: 'Python bindings for the LZO data compression library'
+  summary: Python bindings for the LZO data compression library
   description: |
     Python-LZO provides Python bindings for LZO, i.e. you can access
     the LZO library from your Python scripts thereby compressing
