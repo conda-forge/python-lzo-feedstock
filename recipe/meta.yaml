@@ -13,7 +13,7 @@ source:
 
 build:
   skip: true  # [win]
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -32,7 +32,7 @@ test:
 
 about:
   home: https://github.com/jd-boyd/python-lzo
-  license: GPL-2.0
+  license: GPL-2.0-only
   license_file: COPYING
   summary: Python bindings for the LZO data compression library
   description: |
