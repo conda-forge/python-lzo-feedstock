@@ -22,6 +22,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
     - lzo 2.10.*
   run:
     - python
