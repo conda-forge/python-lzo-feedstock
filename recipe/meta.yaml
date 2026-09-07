@@ -4,16 +4,16 @@
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   skip: true  # [win]
-  number: 3
+  number: 4
 
 requirements:
   build:
@@ -25,10 +25,10 @@ requirements:
     - python
     - pip
     - setuptools
-    - lzo 2.10.*
+    - lzo
   run:
     - python
-    - lzo 2.10.*
+    - lzo
 
 test:
   imports:
