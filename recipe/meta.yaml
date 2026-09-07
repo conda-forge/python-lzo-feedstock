@@ -25,10 +25,10 @@ requirements:
     - python
     - pip
     - setuptools
-    - lzo 2.10.*
+    - lzo
   run:
     - python
-    - lzo 2.10.*
+    - lzo
 
 test:
   imports:
